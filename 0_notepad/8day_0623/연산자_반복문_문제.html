@@ -13,7 +13,6 @@
         i = i*i;
         document.write(i);
     </script>
-
     
     <h3>2. 원하는 만큼 별 출력하기</h3>
         <script>
@@ -36,10 +35,7 @@
                     a= a+1;              
                 }
         </script>
-
-
     
-
     <h3> 4. 지름을 입력받아 원주(원의 둘레) 구하기 </h3>
         <script>
             let i=prompt("지름을 입력해서 원주를 구하시오");
@@ -47,12 +43,11 @@
             document.write(i);
         </script>
 
-
+    
     
 <h3>5. 점수를 입력받아 학점을 구하시오 (90점이상 A, 80점 이상 B, 나머지 F)</h3> 
 <script>
         let i= prompt("점수를 입력하시오");
-
         if( i >=90){
             document.write("A"); 
         }else if( i >=80){
@@ -60,50 +55,53 @@
         }else{
             document.write("F");
         }
-
 </script>
 
--->
+
 
 <h3>6. 국어, 영어, 수학점수를 입력받아 평균을 출력하시오</h3>
 <script>
+       let kor=prompt("국어 점수를 입력하세요");
+       let ing=prompt("영어 점수를 입력하세요");
+       let mat=prompt("영어 점수를 입력하세요");
 
-       let i=prompt("국어,영어,수학 점수를 입력하시오");
+       let i=(kor+eng+mat)/3;
+       document.write("평균 점수는"+i+"입니다");
+</script>
 
-       
+-->
+7.  국어, 영어점수 입력 받아  모두 90점 이상이면 장학금 지급 출력
+<script>
+      
+    let kor=prompt("국어 점수를 입력하세요");
+    let eng=prompt("영어 점수를 입력하세요");
 
+    if(kor>=90 && eng>=90){
+        document.write("장학금 지급");
+    }else{
+        document.write("장학금 지급 불가능");
+    }
+    
 </script>
 
 <!--
-7.  국어, 영어점수 입력 받아  모두 90점 이상이면 장학금 지급 출력
-
 <h3>8. 카드사용금액을 입력받아  50만원이상  "vvip"  30이상이면 "vip"  나머지 "bronze" 출력</h3>
+
 <script>
-      
-        let money2=700000;  
-        let money;
-
-            if( kor >=500000){
-                money="VVIP"; 
-            }else if( kor >=300000){
-                money="vip";
-            }else{
-                money="bronze";
-            }
-            alert(money); 
-            let menu =3;  
-            let su = prompt("숫자를 입력하세요");
-        
+    let i=prompt("카드 사용 금액을 입력하세요");
+if(i>=500000){
+    document.write("VVIP");
+}else if(i>=300000){
+    document.write("VIP");
+}else{
+    document.write("bronze");
+}
 </script>
--->
 
 
-    
+
 </body>
 </html>
 
 
-
     
-
-
