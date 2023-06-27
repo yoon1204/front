@@ -8,38 +8,32 @@
 <body>
     <script>
     
-    let word1 = "보아";
-    let word2 = "동방신기";
-    let word3 = "슈퍼주니어";
-    let word4 = "소녀시대";
-    let word5 = "샤이니";
-    let word6 = "에프엑스";
-    let word7 = "엑소";
-    let word8 = "레드벨벳";
-    let word9 = "엔시티";
-    let word10 = "에스파";
-    let word11 = "박진영";
-    let word12 = "투피엠";
-    let word13 = "트와이스";
-    let word14 = "데이식스";
-    let word15 = "스트레이키즈";
-    let word16 = "ITZY";
-    let word17 = "NiziU";
-    let word18 = "NMIXX";
-    let word19 = "Xdinary Heroes";
-    let word20 = "BOY STORY";
-    
-    
-    let sm = ["보아","동방신기","슈퍼주니어","소녀시대","샤이니","에프엑스","엑소","레드벨벳","엔시티","슈퍼엠","에스파","갓더비트"];
-    let jyp = ["박진영","투피엠","트와이스","데이식스","스트레이키즈","ITZY","NiziU","NMIXX","Xdinary Heroes","BOY STORY"];
+    let sm1 = ["보아","동방신기","슈퍼주니어","소녀시대","샤이니"];
+    let sm2 = ["에프엑스","엑소","레드벨벳","엔시티","에스파"];
+    let jyp1 = ["박진영","투피엠","트와이스","데이식스","스트레이키즈"];
+    let jyp2 = ["ITZY","NiziU","NMIXX","Xdinary Heroes","BOY STORY"];
 
     let company = prompt("기획사를 선택하세요","0:sm,1:jyp");
     let singer = prompt("가수를 선택하세요");
 
+    for(let i=0; i<5; i++){
+        console.log(sm1[i]);
+    }
+
+    console.log(sm1[0]);
+    console.log(sm1[1]);
+    console.log(sm1[2]);
+    console.log(sm1[3]);
+    console.log(sm1[4]);
+
     if(company==0){      
-        alert(sm[singer]);
+        alert(sm1[singer]);
     }else if(company==1){
-        alert(jyp[singer]);
+        alert(sm2[singer]);   
+    }else if(company==2){
+        alert(jyp1[singer]);   
+    }else if(company==3){
+        alert(jyp2[singer]);
     }
     
     let ent=
@@ -48,7 +42,7 @@
         ["박진영","투피엠","트와이스","데이식스","스트레이키즈","ITZY","NiziU","NMIXX","Xdinary Heroes","BOY STORY"]
     ];
 
-    console.log(ent[1][2]);
+    console.log(ent[0][5]);
     
 
 

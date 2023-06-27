@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  
+/*
+1.prompt 사용자입력 점수를 입력받아서 학점을 출력해 봅시다
+<script>
+  let score = prompt("점수를 입력하세요");
+  let grade;    
+     if(score>=90){
+     grade="A";
+     }else if(score>=80){
+     grade="B";
+     }else if(score>=70){
+     }else{
+     grade="F";
+     }
+     alert(grade);
+</script>
+
+
+2. 1번  3번 하기 
+      2번  점수가 음수가 입력되기 전까지 반복하기
+<script>
+  while(true){       
+    let score=prompt("점수를 입력하세요");    
+    let grade;                               
+      if(score>0){
+         if(score>=90){
+              grade="A";
+         }else if(score>=80){
+              grade="B";
+         }else{
+              grade="F";
+         }
+              alert(grade);
+         }else{
+              alert("종료");
+              break;
+         }                 
+   }      
+</script>
+
+3. 구구단 ( 2단 출력)
+   - console.log( ) 
+   - document.write()
+<script>
+for (let i = 1; i <= 9; i++) {
+   console.log("2 x " + i + " = " + 2 * i);
+   document.write("2 x " + i + " = " + 2 * i + "<br>");
+   }
+</script>
+
+ 4. 2~5단까지 출력하기 ( 2~5단)  
+<script>      
+   for(let i=2; i<=5; i++){
+    for(let j=1; j<=9; j++){
+       document.write( i + "x" + j + "=" + i*j + "<br>");
+    }
+}
+</script>
+
+ 5. 별출력  (단 *별 한개를 이용하기)
+<script>
+   let i=0;
+    while (i<1){
+        document.write("*");
+        i=i+1;
+    }
+    document.write("<br>");
+    document.write("<br>");
+   let a=0;
+    while (i<6){
+      document.write("*");
+      i=i+1;
+    }
+    document.write("<br>");   
+   for(let b=1; b<=5; b++){ 
+      document.write("*");
+    }
+    document.write("<br>");
+   for(let i=1; i<=5; i++){ 
+      document.write("*");
+    }
+    document.write("<br>");
+   for(let i=1; i<=5; i++){ 
+      document.write("*");
+    }
+    document.write("<br>");
+    let c=0;
+    while (c<1){
+        document.write("*");
+        c=c+1;
+    }
+    document.write("<br>");
+    let d=0;
+    while (d<2){
+        document.write("*");
+        d=d+1;
+    }
+    document.write("<br>");
+    let e=0;
+    while (e<3){
+      document.write("*");
+      e=e+1;
+    }
+    document.write("<br>");
+    let f=0;
+    while (f<3){
+      document.write("*");
+      f=f+1;
+    }
+    document.write("<br>");
+    let g=0;
+    while (g<2){
+      document. write("*");
+      g=g+1;
+    }
+    document.write("<br>");
+    let h=0;
+    while (h<1){
+      document.write("*");
+      h=h+1;
+    }
+</script>
+
+6. 구구단 while, do~ while  해결하기
+ <script>
+    let i=1;
+ while(i<=9){
+    let j=1;
+    while(j<=9){
+         document.write(i + "x" + j + "=" + i*j + "<br>");
+         j=j+1;  
+    }
+    i=i+1;      
+ }
+ let i=1;
+
+do{
+    document.write("2" + "x" + i + "=" + 2*i + "<br>");
+    i++;
+}while(i<=9);
+
+
+</script>
+
+
+
+
+  
+
+
+
+</body>
+</html>
