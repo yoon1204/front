@@ -37,9 +37,9 @@
 			<div id="prod-pic">
 				<img src="coffee-pink.jpg" alt="에디오피아 게뎁" id="cup" width="200" height="200">
 					<div id="small-pic">
-						<img src="coffee-pink.jpg" class="small" onclick="changeImg1()">
-						<img src="coffee-blue.jpg" class="small" onclick="changeImg2()">
-						<img src="coffee-gray.jpg" class="small" onclick="changeImg3()">
+						<img src="coffee-pink.jpg" class="small" onclick="changeImg(this)">
+						<img src="coffee-blue.jpg" class="small" onclick="changeImg(this)">
+						<img src="coffee-gray.jpg" class="small" onclick="changeImg(this)">
 					</div>
 			</div>			
 			<div id="desc">
@@ -51,7 +51,8 @@
 					<li>로스팅 : 2019.06.17</li>
 					<button>장바구니 담기</button>
 				</ul>				
-				<a href="#" id="view" onclick="toggle()">상세 설명 보기</a>							
+				<a href="#" id="view" onclick="toggle()">상세 설명 보기</a>	
+				
 			</div>
 			<hr>
 			<div id="detail">									
@@ -71,6 +72,15 @@
 			</div>
 	</div>
 
-	<script src="js/product.js"></script>
+	<script>
+		function changeImg(a){  // this -> 매개변수
+		//alert("dfdfdf");
+		//alert(a);
+		//alert(a.src);
+		let newSrc=a.src;
+		let cupE=document.getElementById("cup");  //대상
+		cupE.src=newSrc;
+	}
+	</script>
 </body>
 </html>
